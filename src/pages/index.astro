@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { RedditApp } from '../components/RedditApp';
+---
+
+<Layout title="Reddit Client">
+  <main>
+    <h1>Reddit Client</h1>
+    <RedditApp client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+    text-align: center;
+  }
+</style>
